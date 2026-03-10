@@ -1,6 +1,6 @@
 /**
  * OOPSBannerApp
- * UC2: Print OOPS Banner using ASCII Art
+ * UC3: Render OOPS Banner using String.join()
  *
  * @author Akshith
  * @version 1.0
@@ -10,15 +10,14 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println("  *****     *****     ******     *****  ");
-        System.out.println(" *     *   *     *    *     *   *     * ");
-        System.out.println("*       * *       *   *     *  *       *");
-        System.out.println("*       * *       *   ******   *        ");
-        System.out.println("*       * *       *   *        *        ");
-        System.out.println(" *     *   *     *    *         *     * ");
-        System.out.println("  *****     *****     *          *****  ");
-
+        System.out.println(String.join(" ", "  *****  ", "  *****  ", " ******  ", "  *****  "));
+        System.out.println(String.join(" ", " *     * ", " *     * ", " *     * ", " *     * "));
+        System.out.println(String.join(" ", "*       *", "*       *", " *     * ", "*       *"));
+        System.out.println(String.join(" ", "*       *", "*       *", " ******  ", "*       *"));
+        System.out.println(String.join(" ", "*       *", "*       *", " *       ", "*       *"));
+        System.out.println(String.join(" ", " *     * ", " *     * ", " *       ", " *     * "));
+        System.out.println(String.join(" ", "  *****  ", "  *****  ", " *       ", "  *****  "));
     }
-
 }
+
 
